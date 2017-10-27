@@ -18,9 +18,8 @@ def all_list(): # полный список файлов
     return files_list
 
 def ensure_dir(file_path): # проверяем есть ли уже каталог с именем Result, если нет, то создаем
-    directory = file_path
-    if not os.path.exists(directory):
-        os.makedirs(directory)
+    if not os.path.exists(file_path):
+        os.makedirs(file_path)
 
 def main(files_list): 
     print('Идет обработка...')
